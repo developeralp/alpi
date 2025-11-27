@@ -1,6 +1,6 @@
 name: alpi
 description: "A simple Flutter helper package with easy padding, spacing, sizing, and text styling."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/developeralp/alpi
 repository: https://github.com/developeralp/alpi
 issue_tracker: https://github.com/developeralp/alpi/issues
