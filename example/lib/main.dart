@@ -1,3 +1,4 @@
+import 'package:alpi/color_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:alpi/alpi.dart';
 
@@ -38,7 +39,7 @@ class DemoPage extends StatelessWidget {
               Container(
                 width: Alpi.width(context, 0.5), // 50% of parent's width
                 height: Alpi.height(context, 0.2), // 20% of parent's height
-                color: Colors.blueAccent,
+                color: ColorUtils.fromHex("#1565c0"),
                 alignment: Alignment.center,
                 child: const BoldText("Responsive box"),
               ),
