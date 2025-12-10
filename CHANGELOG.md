@@ -1,3 +1,11 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* First version.
+
+## 0.0.2
+
+* Console, ColorUtils and FormValidator class added.
+
+## 0.0.2+1
+
+* Hot-fix for alpi.dart
