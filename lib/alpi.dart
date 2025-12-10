@@ -1,6 +1,10 @@
+export 'color_utils.dart';
+export 'console.dart';
+
 export 'easy_padding.dart';
 export 'easy_sizedbox.dart';
 export 'easy_text.dart';
+export 'form_validator.dart';
 
 import 'package:flutter/material.dart';
 

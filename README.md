@@ -196,8 +196,7 @@ Add `alpi` as a dependency in your `pubspec.yaml`:
 ```yaml
 dependencies:
 
-alpi: ^0.0.1
-
+alpi: ^0.0.2+1
 ```
 
 
@@ -223,23 +222,35 @@ class DemoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Console.writeLine('Hello world!');
+    
     return Scaffold(
+      appBar: AppBar(title: const Text("Alpi Demo")),
       body: Center(
         child: EasyPadding.all(
           16,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              BoldText("Hello Alpi!"),
-              SizedBoxHeight(12),
-              ItalicText("This text is italic."),
-              SizedBoxHeight(20),
+              const BoldText("Hello Alpi!"),
+              const SizedBoxHeight(12),
+              const ItalicText("This text is italic."),
+              const SizedBoxHeight(20),
               Container(
-                width: Alpi.width(context, 0.5),   // 50% of parent's width
+                width: Alpi.width(context, 0.5), // 50% of parent's width
                 height: Alpi.height(context, 0.2), // 20% of parent's height
-                color: Colors.blueAccent,
+                color: ColorUtils.fromHex("#1565c0"),
                 alignment: Alignment.center,
-                child: BoldText("Responsive box"),
+                child: const BoldText("Responsive box"),
+              ),
+              const SizedBoxHeight(20),
+              EasyPadding.symmetric(
+                vertical: 8,
+                horizontal: 16,
+                child: Container(
+                  color: Colors.green,
+                  child: const ItalicText("Padded text with EasyPadding"),
+                ),
               ),
             ],
           ),

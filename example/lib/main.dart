@@ -1,4 +1,3 @@
-import 'package:alpi/color_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:alpi/alpi.dart';
 
@@ -24,6 +23,8 @@ class DemoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Console.writeLine("Hello Alpi!");
+
     return Scaffold(
       appBar: AppBar(title: const Text("Alpi Demo")),
       body: Center(
