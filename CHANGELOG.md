@@ -4,7 +4,7 @@
 
 ## 0.0.2
 
-* Console, ColorUtils and FormValidator class added.
+* Console, ColorUtils and FormValidator classes added.
 
 ## 0.0.2+1
 
